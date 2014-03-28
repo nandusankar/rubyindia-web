@@ -13,7 +13,7 @@
   <div id="menuToggle"><i class="icon-reorder"></i></div>
 </nav>
 
-<section id="home" name="home"></section>
+<section id="home"></section>
 <div id="headerwrap">
   <div class="container">
     <div class="logo">
@@ -35,8 +35,8 @@
   </div>
 </div>
 
-<section id="about" name="about"></section>
-<div id="f">
+<section id="about"></section>
+<div class="f">
   <div class="container">
     <div class="row">
       <h3>About</h3>
@@ -53,18 +53,21 @@
         <br/>
         <br/>
 
-        <!-- Begin MailChimp Signup Form -->
-        <link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
-        <style type="text/css">
-            #mc_embed_signup {
-                background: #fff;
-                clear: left;
-                font: 14px Helvetica, Arial, sans-serif;
-            }
+        <%= content_for :page_specific_css do %>
+          <!-- Begin MailChimp Signup Form -->
+          <link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
+          <style type="text/css">
+              #mc_embed_signup {
+                  background: #fff;
+                  clear: left;
+                  font: 14px Helvetica, Arial, sans-serif;
+              }
 
-            /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-               We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-        </style>
+              /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+                 We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+          </style>
+        <% end %>
+
         <div id="mc_embed_signup" class="col-lg-6 col-lg-offset-3">
           <form action="http://rubyindia.us3.list-manage1.com/subscribe/post?u=872964bc728644fc223acdbdd&amp;id=45fa620ae0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
             <label for="mce-EMAIL">Subscribe to the newsletter.</label>
@@ -82,8 +85,8 @@
   </div>
 </div>
 
-<section id="contact" name="contact"></section>
-<div id="f">
+<section id="contact"></section>
+<div class="f">
   <div class="container">
     <div class="row">
       <h3>Contact</h3>
