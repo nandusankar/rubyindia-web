@@ -23,6 +23,7 @@
 <body data-spy="scroll" data-offset="0" data-target="#theMenu">
   <%= yield %>
 
-  <%= render 'shared/javascripts' %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= render 'shared/ga' %>
 </body>
 </html>
