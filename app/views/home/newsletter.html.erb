@@ -1,0 +1,210 @@
+<html>
+<head>
+  <title>RubyIndia</title>
+  <style type="text/css">
+      .colorRed {
+          color: #EC1622;
+      }
+
+      .colorDarkRed {
+          color: #990E16;
+      }
+
+      .mainWrapper {
+          width: 680px;
+          text-align: center;
+          color: #333;
+      }
+
+      .textAlignLeft {
+          text-align: left;
+      }
+
+      .font12 {
+          font-size: 12px;
+      }
+
+      .bgGrey {
+          background-color: #F8F8F8;
+      }
+
+      .borderBtmRed {
+          border-bottom: 1px solid #EC1622;
+      }
+
+      .fontB {
+          font-weight: bold;
+      }
+
+      .events a, .articles a {
+          text-decoration: none;
+          border: 1px solid #333;
+          border-radius: 5px;
+          padding: 5px;
+          margin-top: 10px;
+          color: #333;
+      }
+
+      .events, .articles {
+          border-bottom: 1px dotted #333;
+          padding: 10px 0;
+      }
+
+      .events h3, .articles h3 {
+          padding: 10px 0;
+      }
+
+      .fontNr {
+          font-style: normal;
+          font-weight: 400;
+      }
+
+      .margintopBtm5 {
+          margin: 5px 0;
+      }
+
+      .font30 {
+          font-size: 30px;
+      }
+
+      h1 {
+          font-size: 48px;
+      }
+
+      p {
+          line-height: 20px;
+          color: #333;
+      }
+
+      .dIB {
+          display: inline-block;
+      }
+
+      .lineHt {
+          line-height: 21px;
+      }
+
+      .contLink {
+          margin: 10px 0;
+      }
+
+      .footer {
+          color: #333;
+          font-size: 10px;
+          padding: 10px 0;
+      }
+
+      .rubyImg {
+          background-image: url("<%= asset_path "ruby-newsletter.png"%>");
+          height: 40px;
+          width: 47px;
+          background-repeat: no-repeat;
+          margin: 0 5px;
+      }
+
+      .eventsIcon {
+          background-image: url("<%= asset_path "events.png"%>");
+          height: 25px;
+          width: 27px;
+          background-repeat: no-repeat;
+          vertical-align: bottom;
+      }
+
+      .articlesIcon {
+          background-image: url("<%= asset_path "articles.png"%>");
+          height: 17px;
+          width: 22px;
+          background-repeat: no-repeat;
+      }
+
+      .editorNote {
+          width: 480px;
+          line-height: 21px;
+          vertical-align: top;
+      }
+  </style>
+</head>
+<body class="mainWrapper">
+<div class="bgGrey" style="padding:10px;">
+  <h1 class="colorRed margintopBtm5"><span class="rubyImg dIB"></span>Ruby<span class="colorDarkRed">India</span></h1>
+
+  <h2 class="font12 fontNr margintopBtm5">An email roundup of Ruby news and articles from India.</h2>
+
+  <section class="textAlignLeft ">
+    <h3 class="colorRed font30 margintopBtm5">RubyIndia Issue#2</h3>
+
+    <p>RubyIndia brings curated content from and for the Indian Ruby Community and friends.
+      It aims to be a crowd sourced content aggregation of Articles, Blogs, Projects, Products, Highlights, News, and
+      all things interesting, from the community.</p>
+  </section>
+
+  <section class="textAlignLeft ">
+    <h3 class="margintopBtm5">Editor's Note</h3>
+
+    <div class="dIB editorNote">RubyIndia brings curated content from and
+      for the Indian Ruby Community and friends. It aims to be a crowd sourced content aggregation of Articles, Blogs,
+      Projects, Products, Highlights, News, and all things interesting, from the community. RubyIndia brings curated
+      content from and for the Indian Ruby Community and friends. It aims to be a crowd sourced content aggregation of
+      Articles, Blogs, Projects, Products, Highlights, News, and all things interesting, from the community.
+    </div>
+    <div class="dIB" style="padding:0 20px">
+      <img src="" height="128" width="128"/>
+
+      <div class="fontB font12" style="text-align:center;">John Doe</div>
+      <div class="font12" style="text-align:center;">Editor, RubyIndia</div>
+    </div>
+  </section>
+</div>
+<div class="articles textAlignLeft">
+  <h3 class="colorRed borderBtmRed"><span class="articlesIcon dIB"></span>Articles</h3>
+  <section class="lineHt">
+    <div class="fontB">Here goes the article title. If the article title is too long, it can go to the next line.</div>
+    <div>RubyIndia brings curated content from and for the Indian Ruby Community and friends.
+      It aims to be a crowd sourced content aggregation of Articles, Blogs, Projects, Products, Highlights, News, and
+      all things interesting, from the community
+    </div>
+    <div class="contLink"><a href="javascript:void(0);">Continue Reading</a></div>
+  </section>
+</div>
+<div class="articles textAlignLeft">
+  <section class="lineHt">
+    <div class="fontB">Here goes the article title. If the article title is too long, it can go to the next line.</div>
+    <div>RubyIndia brings curated content from and for the Indian Ruby Community and friends.
+      It aims to be a crowd sourced content aggregation of Articles, Blogs, Projects, Products, Highlights, News, and
+      all things interesting, from the community
+    </div>
+    <div class="contLink"><a href="javascript:void(0);">Continue Reading</a></div>
+  </section>
+</div>
+<div class="events textAlignLeft">
+  <h3 class="colorRed borderBtmRed"><span class="eventsIcon dIB"></span>Events</h3>
+  <section class="lineHt">
+    <div class="fontB">Here goes the event title.</div>
+    <div>RubyIndia brings curated content from and for the Indian Ruby Community and friends.
+      It aims to be a crowd sourced content aggregation of Articles, Blogs, Projects, Products, Highlights, News, and
+      all things interesting, from the community
+    </div>
+    <div class="contLink"><a href="javascript:void(0);">View Details</a></div>
+  </section>
+</div>
+<div class="events textAlignLeft">
+  <section class="lineHt">
+    <div class="fontB">Here goes the event title.</div>
+    <div>RubyIndia brings curated content from and for the Indian Ruby Community and friends.
+      It aims to be a crowd sourced content aggregation of Articles, Blogs, Projects, Products, Highlights, News, and
+      all things interesting, from the community
+    </div>
+    <div class="contLink"><a href="javascript:void(0);">View Details</a></div>
+  </section>
+</div>
+<div class="footer">
+  <div>&copy;2001-2014 All Rights Reserved.</div>
+  <div style="padding-bottom:10px;">You are receiving this email because you signed up to the RubyIndia newsletter.
+  </div>
+  <a href="javascript:void(0);">view in browser</a>
+  <a href="javascript:void(0);">unsubscribe</a>
+  <a href="javascript:void(0);">update subsription preferences</a>
+</div>
+<span class="rubyImg dIB">
+</body>
+</html>
