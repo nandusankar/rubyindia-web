@@ -4,6 +4,6 @@ class HomeController < ApplicationController
   end
 
   def newsletter
-    render "newsletter", layout: false
+    render layout: 'issue'
   end
 end
