@@ -1,0 +1,9 @@
+<div class="events textAlignLeft">
+  <div class="lineHt">
+    <div class="fontB"><%= event.title -%></div>
+    <%= event.description.html_safe -%>
+    <div class="contLink">
+      <%= render event.links -%>
+    </div>
+  </div>
+</div>
