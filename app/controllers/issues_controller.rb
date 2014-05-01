@@ -1,5 +1,10 @@
 class IssuesController < ApplicationController
+
+  layout 'issue'
+
   def show
-    render layout: false
+    @issue    = Issue.find(params[:id])
+    @articles = @issue.articles
+    @events   = @issue.events
   end
 end

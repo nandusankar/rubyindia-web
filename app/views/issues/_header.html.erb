@@ -1,0 +1,23 @@
+<div class="bgGrey" style="padding:10px;">
+  <h1 class="colorRed margintopBtm5">
+    <span class="rubyImg dIB"></span>Ruby<span class="colorDarkRed">India</span>
+  </h1>
+
+  <h2 class="font12 fontNr margintopBtm5">An email roundup of Ruby News and Articles from India.</h2>
+
+  <div class="">
+    <h3 class="colorRed font30 margintopBtm5">RubyIndia Issue#<%= @issue.id -%></h3>
+  </div>
+
+  <p>
+    RubyIndia brings curated content from and for the Indian Ruby
+    Community and friends. It aims to be a crowd sourced content
+    aggregation of Articles, Blogs, Projects, Products, Highlights,
+    News, and all things interesting, from the community.
+  </p>
+
+  <div class="textAlignLeft">
+    <h3 class="margintopBtm5">Editor's Note</h3>
+    <%= @issue.editor_note.html_safe -%>
+  </div>
+</div>
