@@ -25,4 +25,5 @@ $("#send_link_form").bind "ajax:complete", (e, data, status, xhr) ->
     .addClass("alert-success")
     .html data.responseText
     .show()
+  $("#send_link_form")[0].reset()
   return
