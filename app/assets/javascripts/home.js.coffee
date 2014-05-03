@@ -16,7 +16,7 @@ link_form_valid = ->
   test_http_url link_val
 
 test_http_url = (uri) ->
-  urlregex = new RegExp("^(http://|https://){1}([0-9A-Za-z]+.)")
+  urlregex = new RegExp("^(http://|https://)")
   urlregex.test uri
 
 $("#send_link_form").bind "ajax:complete", (e, data, status, xhr) ->
