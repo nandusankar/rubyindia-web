@@ -42,3 +42,4 @@ end
 
 gem 'handy', github: 'bigbinary/handy'
 gem 'rails_12factor'
+gem "skylight"
