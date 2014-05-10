@@ -1,0 +1,57 @@
+common:
+
+  secret_key_base: <%= ENV['SECRET_KEY_BASE'] || SecureRandom.hex(64) %>
+
+  aws_s3:
+    access_key_id: <%= ENV['AWS_ACCESS_KEY_ID'] %>
+    secret_access_key: <%= ENV['AWS_SECRET_ACCESS_KEY'] %>
+    bucket_name: <%= ENV['AWS_S3_BUCKET_NAME'] %>
+
+  host: lvh.me:3000
+  url_with_port: http://lvh.me:3000
+
+  mailer:
+    default_from_email: "'RubyIndia' <notifications@rubyindia.org>"
+    host_for_email_with_www: www.localhost:3000
+    delivery_method: test
+    smtp_settings:
+    smtp_settings:
+      user_name: 1040094af342dc30a
+      password: 06340ca8c04ae9
+      address: mailtrap.io
+      port: 2525
+#      authentication: plain
+
+test:
+  mailer:
+    delivery_method: :test
+
+development:
+  mailer:
+    delivery_method: :smtp
+
+staging:
+  mailer:
+    host_for_email_with_www: www.rubyindia.org
+    delivery_method: :smtp
+
+  host: rubyindia.org
+  url_with_port: http://rubyindia.org/
+
+production:
+  bcc: vipulnsward@gmail.com
+  mailer:
+    host_for_email_with_www: deccanrubyconf.org
+    delivery_method: :smtp
+
+    smtp_settings:
+      user_name: <%=ENV['MANDRILL_USERNAME']%>
+      password: <%=ENV['MANDRILL_PASSWORD']%>
+      domain: www.rubyindia.org
+      address: smtp.sendgrid.net
+      port: 587
+      authentication: plain
+      enable_starttls_auto: true
+
+  host: www.rubyindia.org
+  url_with_port: http://rubyindia.org
