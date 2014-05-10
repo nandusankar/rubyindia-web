@@ -20,7 +20,7 @@ common:
       password: 06340ca8c04ae9
       address: mailtrap.io
       port: 2525
-#      authentication: plain
+      authentication: plain
 
 test:
   mailer:
@@ -48,7 +48,7 @@ production:
       user_name: <%=ENV['MANDRILL_USERNAME']%>
       password: <%=ENV['MANDRILL_PASSWORD']%>
       domain: www.rubyindia.org
-      address: smtp.sendgrid.net
+      address: 'smtp.mandrillapp.com'
       port: 587
       authentication: plain
       enable_starttls_auto: true
