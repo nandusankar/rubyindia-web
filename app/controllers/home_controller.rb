@@ -15,7 +15,7 @@ class HomeController < ApplicationController
     }
 
     #notify reviewers
-    NewContentMailer.new_content_notify(content).deliver
+    ContentMailer.new_content_notify(content).deliver
 
     render text: "We are notified, Thank You"
   end

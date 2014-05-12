@@ -1,4 +1,4 @@
-class NewContentMailer < ActionMailer::Base
+class ContentMailer < ActionMailer::Base
   default from: "new_content@rubyindia.org"
 
   NOTIFY_TO = ["contact@rubyindia.org"]
