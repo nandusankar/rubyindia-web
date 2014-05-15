@@ -1,0 +1,29 @@
+<p>To help us out highlight community content, </p>
+<p>or have any interesting Blogs, Products, Companies, People that we should follow, 
+<a data-toggle="modal" href="#send_link_model">send us a link</a> or <a href="mailto:contact@rubyindia.org">write to us</a>.
+</p>
+
+<%= form_tag :home_submit_link, method: :post, remote: true, id: "send_link_form" do %>
+  <div class="modal fade" id="send_link_model" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title" id="send_link_model_label">Send us a link</h4>
+        </div>
+        <div class="modal-body">
+          <div class="alert alert-danger" id="content_form_errors" style="display:none"></div>
+          <%= label_tag :content_link, "HTTP Link", style: "font-weight:normal"%> 
+          <%= text_field_tag :content_link, "", size: "50" %><br/><br/>
+
+          <%= label_tag :content_link_description, "Description", style: "font-weight:normal"%> 
+          <%= text_field_tag :content_link_description, "", size: "50", placeholder: "(Optional) Short description" %>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <%= button_tag "Submit Link", class: "btn btn-primary" %>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>
