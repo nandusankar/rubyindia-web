@@ -20,5 +20,8 @@ module RubyindiaWeb
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
     config.middleware.insert_before ActionDispatch::ParamsParser, "CatchJsonParseErrors"
+    config.assets.paths << Rails.root.join('app', 'assets', 'fonts')
+    config.assets.paths << Rails.root.join('app', 'assets', 'font')
+    config.assets.precompile += %w( .svg .eot .woff .ttf)
   end
 end
