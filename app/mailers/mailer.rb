@@ -6,8 +6,13 @@ class Mailer < ActionMailer::Base
 
   default_url_options[:host] = Settings.mailer.host_for_email_with_www
 
-  def dummy_mailer(recipient_email)
-    mail(to: recipient_email, subject: 'Test Email') do |format|
+  def contact_us_notification(contact)
+    @email = contact.email
+    @title = contact.title
+    @body  = contact.body
+    subject = "Contact us message from #{@email}"
+
+    mail(to: Settings.support_email, from: @email,  subject: subject) do |format|
       format.html
     end
   end
