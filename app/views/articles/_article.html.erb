@@ -1,7 +1,7 @@
 <div class="articles textAlignLeft">
   <div class="lineHt">
     <div class="fontB"><%= article.title -%></div>
-    <div><%= article.description -%>
+    <div><%= article.description.html_safe -%>
     </div>
     <div class="contLink">
       <%= render article.links -%>
