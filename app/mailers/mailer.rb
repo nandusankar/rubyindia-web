@@ -12,4 +12,11 @@ class Mailer < ActionMailer::Base
     end
   end
 
+  def new_content_notify(content)
+    @content = content
+
+    mail to: Settings.mailer.notify_to,
+         subject: 'We got new content!'
+  end
+
 end

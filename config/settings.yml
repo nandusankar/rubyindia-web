@@ -13,6 +13,7 @@ common:
   mailer:
     default_from_email: "'RubyIndia' <notifications@rubyindia.org>"
     host_for_email_with_www: www.localhost:3000
+    notify_to: 'contact@rubyindia.org'
     delivery_method: test
     smtp_settings:
     smtp_settings:
