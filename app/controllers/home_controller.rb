@@ -1,6 +1,7 @@
 class HomeController < ApplicationController
+
   def index
-    render
+    render layout: 'landing'
   end
 
   def newsletter

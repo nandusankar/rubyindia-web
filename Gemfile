@@ -1,45 +1,52 @@
 source 'https://rubygems.org'
 
-# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.2'
+ruby '2.1.1'
 
-# Use postgresql as the database for Active Record
+gem 'rails', '4.0.2'
+gem 'arel'
+
 gem 'pg'
 
-# See https://github.com/sstephenson/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
+gem 'thin'
 
-# Use jquery as the JavaScript library
-gem 'jquery-rails'
+gem 'devise', '3.2.3'
+gem 'devise-async'
 
-# Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-gem 'turbolinks'
+gem 'delayed_job_active_record'
+gem 'delayed_job_web', '>= 1.2.0'
+gem 'delayed_job_honeybadger'
 
-# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
-group :doc do
-  # bundle exec rake doc:rails generates the API under doc/api.
-  gem 'sdoc', require: false
-end
+gem 'jquery-rails'
 
-# Use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.1.2'
+gem 'handy'
 
-# Use unicorn as the app server
-gem 'unicorn'
+gem 'honeybadger'
 
-group :development do
-  gem 'quiet_assets'
-end
+gem 'twitter-bootstrap-rails', github: 'seyhunak/twitter-bootstrap-rails', branch: 'bootstrap3'
+
+gem 'simple_form'
+
+gem 'activeadmin', github: 'gregbell/active_admin'
+
+# Using carrierwave for file uploads
+gem 'carrierwave'
 
 group :assets do
   gem 'sprockets-rails', github: 'rails/sprockets-rails'
   gem 'sass-rails',   github: 'rails/sass-rails'
   gem 'coffee-rails', github: 'rails/coffee-rails'
-  gem 'uglifier', '>= 1.3.0'
+  gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'handy', github: 'bigbinary/handy'
-gem 'rails_12factor'
-gem "skylight"
+group :development do
+  gem 'quiet_assets'
+  #gem 'debugger'
+end
+
+group :test do
+  gem 'minitest-reporters', require: false
+  gem 'mocha', require: false
+  gem 'simplecov', require: false
+end

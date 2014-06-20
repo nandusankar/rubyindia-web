@@ -1,6 +1,4 @@
-RubyindiaWeb::Application.configure do
-  config.action_mailer.default_url_options = { host: Settings.host }
-end
+ActionMailer::Base.default_url_options[:host] = Settings.host
 
 ActionMailer::Base.delivery_method = Settings.mailer.delivery_method
 
