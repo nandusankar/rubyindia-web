@@ -43,3 +43,13 @@ rake test test/models/comment_test.rb
 * Commit your changes (git commit -am 'Add some feature')
 * Push to the branch (git push origin my-new-feature)
 * Create new Pull Request
+* 
+
+Credits
+-------
+
+![BigBinary](http://bigbinary.com/assets/common/logo.png)
+
+The hours I and [Prathamesh](https://github.com/prathamesh-sonpatki) work on [RubyIndia](http://www.rubyindia.org) are graciously funded by [BigBinary](http://bigbinary.com). All thanks to it!
+
+The members of [Pune.rb](http://www.punerb.org/), who make all things work.
