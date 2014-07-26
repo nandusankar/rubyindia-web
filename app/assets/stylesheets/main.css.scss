@@ -100,18 +100,20 @@ a:after {
 }
 
 #headerwrap h1 {
-	margin-top: 150px;
-	color: white;
-	font-size: 70px;
-	font-weight: 700;
+  margin-top: 150px;
+  color: white;
+  font-size: 70px;
+  font-weight: 700;
+  text-shadow: 1px 1px 5px buttontext;
 }
 
 #headerwrap h3 {
-	color: white;
-	font-size: 30px;
-	font-weight: 100;
-    font-family: 'EB Garamond', serif;
-    font-style: oblique;
+  color: white;
+  font-size: 30px;
+  font-weight: 100;
+  font-family: 'EB Garamond', serif;
+  font-style: oblique;
+  text-shadow: 1px 1px darkred;
 }
 
 #headerwrap .logo {
