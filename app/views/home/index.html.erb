@@ -1,4 +1,4 @@
-<nav class="menu" id="theMenu">
+<nav class="menu visible-xs" id="theMenu">
   <div class="menu-wrap">
     <h1 class="logo"><a href="/">RubyIndia</a></h1>
     <i class="icon-remove menu-close"></i>
@@ -18,22 +18,31 @@
 
 <section id="home"></section>
 <div id="headerwrap">
-  <div class="container">
-    <div class="logo">
-      <%= image_tag 'http://rubyindia-web.s3.amazonaws.com/ruby.png' %>
+  <div class="top-bar">
+    <div class="logo pull-left col-lg-offset-1 ">
+      <%= image_tag 'http://rubyconfindia.org/images/logo-2b47974f.svg' %>
     </div>
-    <br>
+    <div class="pull-left">
+      <h1>RubyIndia</h1>
+    </div>
+    <div class="col-lg-8 hidden-xs main-menu">
+      <a href="#home" class="smoothScroll">Home</a>
+      <a href="#podcast" class="smoothScroll">Podcast</a>
+      <a href="#about" class="smoothScroll">About</a>
+      <a href="#about" class="smoothScroll">Subscribe</a>
+      <a href="#contact" class="smoothScroll">Contact / Contribute</a>
+      <a href="http://us3.campaign-archive2.com/home/?u=872964bc728644fc223acdbdd&amp;id=45fa620ae0">Archives</a>
+      <a href="https://twitter.com/RubyIndiaOrg" class="icon"><i class="icon-twitter"></i></a>
+      <a href="mailto:contact@rubyindia.org"class="icon"><i class="icon-envelope"></i></a>
+    </div>
+  </div>
+  <div class="tagline hidden-xs">
+    Bringing the best from the Indian Community.
+  </div>
+
+  <div class="container">
 
     <div class="row">
-      <h1>RubyIndia</h1>
-      <br>
-
-      <h3 style="color: rgb(255, 0, 0);"><strong>Bringing the best from the Indian Community.</strong></h3>
-      <br>
-      <br>
-
-      <div class="col-lg-6 col-lg-offset-3">
-      </div>
     </div>
   </div>
 </div>
